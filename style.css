@@ -1,0 +1,143 @@
+:root{
+    --salmon: #ef9d71;
+    --black : #000;
+    --white : #fff;
+    --cyan : #aedee0;
+    --darkSalmon : #200c0a;
+}
+
+body{
+    transition: background-color ease-out .5s;
+}
+
+*::selection{
+    background-color: var(--salmon);
+}
+.navbar {
+    /* background-color: #14a82a; */
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    justify-content: end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.logo{
+    height: 67px;
+    width: 170px;
+    border-radius: 76%;
+    padding-left: 45px;
+    /* overflow: auto; */
+}
+.logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#para{
+    font-size: 2rem;
+    color: rgb(209, 30, 30);
+    font-weight: 700;
+
+}
+   
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+details {
+    margin-bottom: 10px;
+}
+
+summary {
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+details[open] summary {
+    background-color: #0056b3;
+}
+
+details p {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin: 0;
+}
+
+/* #vdo{
+    padding-top: 67px;
+} */
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+.video{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+body[theme="cyan"]{
+    background-color: var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--black);
+}
+
+
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--darkSalmon);
+}
+
+
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
